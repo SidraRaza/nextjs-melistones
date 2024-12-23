@@ -20,6 +20,7 @@ const ProductList = () => {
   const products = Data;
 
   return (
+    <div className="bg-gradient-to-b from-gray-50 to-gray-100 ">
     <div className="container mx-auto px-4 py-16 bg-gradient-to-b from-gray-50 to-gray-100">
       <h1 className="text-5xl font-extrabold text-center mb-16 text-gray-800 tracking-wide">
         Latest Products
@@ -29,6 +30,7 @@ const ProductList = () => {
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
+    </div>
     </div>
   );
 };
